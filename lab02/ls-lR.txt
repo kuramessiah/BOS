@@ -1,0 +1,11 @@
+.:
+итого 4
+drw-rw-r--. 2 kuramessi kuramessi 22 окт 18 20:13 dir
+-rw-r-----. 1 root      kuramessi 10 окт 18 19:49 file
+-rw-------. 1 kuramessi kuramessi  0 окт 18 20:22 file1
+-rw-rw-rw-. 1 kuramessi kuramessi  0 окт 18 20:22 file2
+-rw-rw-rw-. 1 kuramessi kuramessi  0 окт 18 20:30 ls-lR.txt
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file

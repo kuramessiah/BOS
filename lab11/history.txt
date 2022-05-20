@@ -1,0 +1,14 @@
+ 1 uname -r
+ 2 rpmdev-setuptree
+ 3 rpm -i kernel-3.10.0-514.16.1.el7.centos.plus.src.rpm
+ 4 yumdownloader --source kernel
+ 5 rpm -i kernel-4.18.0-305.10.2.el7.src.rpm
+ 6 ls rpmbuild/SPECS/
+ 7 ls rpmbuild/SOURCES/
+ 8 rpmbuild -bs ~/rpmbuild/SPECS/kernel.spec
+ 9 ls ~/rpmbuild/SRPMS/
+ 10 yum-builddep ~/rpmbuild/SRPMS/kernel-4.18.0-305.10.2.el7.src.rpm
+ 11 rpmbuild -bp --target=$(uname -m) rpmbuild/SPECS/kernel.spec
+ 12 cd rpmbuild/BUILD/kernel*/linux*
+ 13 ls ~/rpmbuild/BUILD/kernel-3.10.0-514.16.1.el7/linux-3.10.0-514.16.1.el7.centos.plus.efanov.x86_64/
+ 14  history >> history.txt
